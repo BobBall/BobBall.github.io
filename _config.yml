@@ -1,10 +1,23 @@
-excerpt_separator: ""
-pygments: true
-markdown: kramdown
-url: http://BobBall.github.io
-title: BobBallSite
-email: 
-author: Bob Ball
-description: My awesome new site
-paginate: 6
-google_analytics: 
+---
+title: Test SiteLeaf Site
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+defaults:
+- scope:
+    path: ''
+    type: posts
+  values:
+    layout: post
+    permalink: "/posts/:title/"
+- scope:
+    path: ''
+    type: pages
+  values:
+    layout: page
+permalink: pretty
